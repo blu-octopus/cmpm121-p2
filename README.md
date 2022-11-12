@@ -1,4 +1,4 @@
-# about the project 2 forcmpm121
+# about the project 2 for cmpm121
 
 this project is about lights and particles in unity
 I decided to create a new scene and not continue from project 1 to better demonstrate the lights and particle effects
