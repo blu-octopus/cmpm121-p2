@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-public class ChangingLight : MonoBehaviour{
+public class changeLight : MonoBehaviour{
    // create lights list that can be updated in the inspector
    public List<Light> Lights;
    //public lights : Light[];
@@ -23,12 +23,13 @@ public class ChangingLight : MonoBehaviour{
        button.RegisterCallback<ClickEvent>(ev => ChangeLight());
    }
 
-   bool on = true;
+  // bool state = true;
 
    private void ChangeLight(){
      //clicked button
      //this.GetComponent<Light>().enabled = !on;
-     Lights.ForEach(light => light.enabled = !on);
+     Lights.ForEach(light => light.enabled = !light.enabled );
+     //light.intensity = 0.5
    }
 
   }
